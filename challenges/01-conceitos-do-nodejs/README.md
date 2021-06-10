@@ -39,7 +39,6 @@ As seguintes tecnologias/ferramentas foram utilizadas na construção deste desa
 
 - **[Node.js](https://nodejs.org/)**
 - **[Express](https://expressjs.com/)**
-- **[TypeScript](https://typescriptlang.org/)**
 - **[UUID](https://www.npmjs.com/package/uuid)**
 
 > Veja o arquivo [package.json](https://github.com/carlosmfreitas2409/bootcamp-ignite-nodejs/blob/master/challenges/01-conceitos-do-nodejs/package.json)

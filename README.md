@@ -30,6 +30,8 @@ O Ignite é dividido em trilhas de conhecimento não-dependentes onde nos aprofu
 Abaixo você encontra o índice de cada desafio do Ignite:
 
 - [01 - Conceitos do NodeJS](https://github.com/carlosmfreitas2409/bootcamp-ignite-nodejs/tree/master/challenges/01-conceitos-do-nodejs)
+- [01.1 - Trabalhando com Middlewares](https://github.com/carlosmfreitas2409/bootcamp-ignite-nodejs/tree/master/challenges/01.1-trabalhando-com-middlewares)
+- [01.2 - Corrigindo o código](https://github.com/carlosmfreitas2409/bootcamp-ignite-nodejs/tree/master/challenges/01.2-corrigindo-o-codigo)
 
 ## 📝 Licença
 

@@ -1,0 +1,176 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Challenge",
+    "description": "Esta é uma documentação de API para o desafio do Ignite",
+    "version": "1.0.0",
+    "contact": {
+      "email": "carlosmfreita05@gmail.com"
+    }
+  },
+  "paths": {
+    "/users": {
+      "get": {
+        "tags": ["Users"],
+        "summary": "List all users",
+        "description": "Should return a list of all registered users if the user you are requesting is an admin.",
+        "parameters": [
+          {
+            "name": "user_id",
+            "in": "header",
+            "description": "User ID admin",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "name": {
+                        "type": "string"
+                      },
+                      "email": {
+                        "type": "string"
+                      },
+                      "admin": {
+                        "type": "boolean"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "User does not exist!"
+          },
+          "400": {
+            "description": "User is not an admin!"
+          }
+        }
+      },
+      "post": {
+        "tags": ["Users"],
+        "summary": "Create a new user",
+        "description": "Should register a new user",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string"
+                  },
+                  "email": {
+                    "type": "string"
+                  }
+                },
+                "example": {
+                  "name": "John Doe",
+                  "email": "john.doe@example.com"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Success"
+          },
+          "400": {
+            "description": "User already exists"
+          }
+        }
+      }
+    },
+    "/users/{user_id}": {
+      "get": {
+        "tags": ["Users"],
+        "summary": "Show user",
+        "description": "Should return data from a user",
+        "parameters": [
+          {
+            "name": "user_id",
+            "in": "path",
+            "description": "User ID to be returned",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "name": {
+                        "type": "string"
+                      },
+                      "email": {
+                        "type": "string"
+                      },
+                      "admin": {
+                        "type": "boolean"
+                      },
+                      "created_at": {
+                        "type": "string"
+                      },
+                      "updated_at": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "User does not exists!"
+          }
+        }
+      }
+    },
+    "/users/{user_id}/admin": {
+      "patch": {
+        "tags": ["Users"],
+        "summary": "Set user as admin",
+        "description": "Should turn user into admin.",
+        "parameters": [
+          {
+            "name": "user_id",
+            "in": "path",
+            "description": "User ID that will be turned into admin",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Success"
+          },
+          "404": {
+            "description": "User does not exists"
+          }
+        }
+      }
+    }
+  }
+}

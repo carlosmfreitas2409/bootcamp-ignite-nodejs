@@ -32,6 +32,12 @@ Abaixo você encontra o índice de cada desafio do Ignite:
 - [01 - Conceitos do NodeJS](https://github.com/carlosmfreitas2409/bootcamp-ignite-nodejs/tree/master/challenges/01-conceitos-do-nodejs)
 - [01.1 - Trabalhando com Middlewares](https://github.com/carlosmfreitas2409/bootcamp-ignite-nodejs/tree/master/challenges/01.1-trabalhando-com-middlewares)
 - [01.2 - Corrigindo o código](https://github.com/carlosmfreitas2409/bootcamp-ignite-nodejs/tree/master/challenges/01.2-corrigindo-o-codigo)
+- [02 - Introdução ao SOLID](https://github.com/carlosmfreitas2409/bootcamp-ignite-nodejs/tree/master/challenges/02-introducao-ao-SOLID)
+- [03 - Database Queries](https://github.com/carlosmfreitas2409/bootcamp-ignite-nodejs/tree/master/challenges/03-database-queries)
+- [04 - Testes unitários](https://github.com/carlosmfreitas2409/bootcamp-ignite-nodejs/tree/master/challenges/04-tests-challenge)
+- [04.1 - Testes de integração](https://github.com/carlosmfreitas2409/bootcamp-ignite-nodejs/tree/master/challenges/04.1-tests-integration-challenge)
+- [05 - Transferências com a FinAPI](https://github.com/carlosmfreitas2409/bootcamp-ignite-nodejs/tree/master/challenges/05-transfers-challenge)
+- [06 - Construindo com serverless](https://github.com/carlosmfreitas2409/bootcamp-ignite-nodejs/tree/master/challenges/06-serverless-todo-challenge)
 
 ## 📝 Licença
 
